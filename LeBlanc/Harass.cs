@@ -156,7 +156,7 @@ namespace LeBlanc
 
             var mode = Menu.Item("HarassW2Mode").GetValue<StringList>().SelectedIndex;
 
-            return mode == 1 ? W.Cast() : CurrentTarget.HasEBuff() && W.Cast();
+            return mode == 0 ? W.Cast() : CurrentTarget.HasEBuff() && W.Cast();
         }
 
         private static bool CastE(HitChance hc = HitChance.Low)
